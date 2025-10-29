@@ -1,0 +1,726 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: rgb(243, 238, 238);
+
+  }
+
+  /* Ambullunce Button  */
+
+  .image-button {
+    background-image: url('ambulance-png.webp'); /* Path to your image */
+    background-size: cover; /* Resize the image to fit */
+    background-repeat: no-repeat; /* Avoid repeating */
+    width: 100px; /* Button width */
+    height: 100px; /* Button height */
+    padding: 0; /* Remove padding to keep it square */
+    border: none; /* Remove border */
+    border-radius: 20px;
+    cursor: pointer; /* Change cursor to pointer */
+    position: fixed; /* Keep button fixed on the screen */
+    bottom: 20px; /* Position it 20px from the bottom */
+    right: 20px; /* Position it 20px from the right */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .image-button:hover {
+    transform: scale(1.2); /* Enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+  }
+
+  #em {
+    float: right;
+  }
+
+
+/* video animation */
+
+.slideshow-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Match slideshow height */
+}
+
+.slideshow-container {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    height: 100%; /* Make images fit within the container */
+    object-fit: cover; /* Adjust image scaling */
+}
+
+.slide:first-child {
+    display: block;
+}
+
+/* slide box */
+
+.D-Container {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  margin: auto;
+}
+
+.D1 {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);  */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+ .D1:hover {
+  transform: scale(1.05);
+} 
+
+.D-Container h4 a.L1 {
+  text-decoration: none;
+  color: #3d3f41;
+  transition: color 0.3s ease-in-out;
+}
+
+.D-Container h4 a.L1:hover {
+  color: blueviolet !important;
+}
+
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+   color: #333; 
+}
+
+h4 a {
+  text-decoration: none;
+  color: #3d3f41; 
+} 
+
+/* .D3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 25px;
+} */
+
+.h4 a:hover{
+  color: blueviolet;
+}
+
+a.L1 {
+  text-decoration: none;
+  color: #3d3f41; /* Default color */
+  /* font-size: 20px; */
+  transition: color 0.3s ease-in-out;
+}
+
+a.L1:hover {
+  color: blueviolet; /* Change color on hover */
+  /* font-size: 25px; */
+}
+
+/* anima Dog make */
+
+.anima-container{
+  position: absolute;
+  bottom: -0px;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding: 0px;
+  
+  width: 40%;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .anima-container{
+      bottom: 19px;
+  }
+
+  .D3 h4 {
+    font-size: 18px;
+  }
+}
+
+
+
+/*---- welcome section------ */
+
+.Wel-sec{
+  background-color: hsl(188, 60%, 87%);
+  padding-top: 0px;
+  
+}
+
+.Baner-sec{
+  padding-top: 90px;
+  /* position: relative; */
+  background: url('../photo/banner.png') no-repeat center center;
+  background-size: cover;
+  
+}
+.Wel {
+  /* margin-top: 90px; */
+  /* padding-top: 90px; */
+  text-align: center;
+  /* padding: 40px; */
+  background-color: #caecf2;
+}
+
+.Wel h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Wel h3 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.Wel pre {
+  font-size: 16px;
+  color: #666;
+  width: 80%;
+  margin: auto;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Doctor section */
+.Do {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: hsl(188, 60%, 87%);
+}
+
+.Do1, .Do2 {
+  background-color: hsl(188, 60%, 87%);
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.Do1 img, .Do2 img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.Do1 h4, .Do2 h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Do1 pre, .Do2 pre {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Button Styling */
+.btn1 {
+  height: 50px;
+  width: 250px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 1024px) {
+  
+
+  .Wel h1 {
+      font-size: 22px; /* Reduce heading size */
+  }
+
+  .Wel h3 {
+      font-size: 16px; /* Adjust subheading */
+  }
+
+  .Wel pre {
+      font-size: 14px; /* Reduce text size */
+      line-height: 1.4;
+  }
+
+  .Do {
+      flex-direction: column; /* Stack doctors vertically */
+      align-items: center;
+      gap: 20px;
+  }
+
+  .Do1, .Do2 {
+      width: 90%; /* Allow full-width on small screens */
+      max-width: 400px; /* Prevent excessive stretching */
+      padding: 15px;
+  }
+
+  .Do1 img, .Do2 img {
+      width: 100%; /* Make images responsive */
+      max-width: 250px; /* Prevent oversized images */
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .btn1 {
+      width: 50%; /* Make buttons full-width */
+      padding: 15px;
+  }
+}
+
+
+/* pet care service section */
+
+/* General section styling */
+.service-sec {
+  background-color: rgb(243, 238, 238);
+  /* padding: 20px 0; */
+  text-align: center;
+}
+
+/* Header styling */
+.serv-hed h1 {
+  padding: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Pet images layout */
+.service-pet {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.pet1, .pet2, .pet3, .pet4, .pet5 {
+  background-color: #ffffff;
+  width: 230px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pet3 .Image1{
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.pet4 .Image1{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.pet5 .Image1{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* Image styling */
+.Image1 img {
+  width: 120px;
+  height: auto;
+}
+
+/* Button styling */
+.btn2 {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: #0056b3;
+}
+
+/* Service categories styling */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Individual service blocks */
+.sev1, .sev2, .sev3, .sev4, .sev5, .sev6 {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 720px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sev1 .Image2 img{
+  width: 200px;
+  height: 150px;
+}
+
+.sev2 .Image2 img{
+  width: 200px;
+  height: 160px;
+}
+
+.sev3 .Image2 img{
+  width: 200px;
+  height: 160px;
+}
+
+.sev4 .Image2 img{
+  width: 200px;
+  height: 160px;
+}
+
+.sev5 .Image2 img{
+  width: 200px;
+  height: 180px;
+}
+.sev6 .Image2 img{
+  width: 200px;
+  height: 150px;
+}
+
+.des1 {
+  flex: 1;
+  text-align: center;
+}
+
+.des1 h5 {
+  font-size: 18px;
+  color: #333;
+}
+
+.des1 pre {
+  font-size: 14px;
+  color: #555;
+}
+
+.Image2 img {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/* View More Service button */
+.service-sec .btn2 {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6e8aa8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.service-sec .btn2:hover {
+  background-color: #0056b3;
+}
+
+.service-sec .btn3 {
+  height: 50px;
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.service-sec .btn3:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  .services {
+      width: auto;
+      flex-direction: column; /* Stack services vertically */
+      align-items: center;
+      gap: 15px; /* Reduce spacing */
+  }
+
+  .sev1, .sev2, .sev3, .sev4, .sev5, .sev6 {
+      flex-direction: column; /* Stack content inside each service */
+      width: 90%; /* Allow full-width on small screens */
+      max-width: 600px; /* Prevent excessive stretching */
+      text-align: center;
+      padding: 10px;
+  }
+
+  .Image2 img {
+      width: 100%; /* Make images responsive */
+      max-width: 250px; /* Prevent oversized images */
+      height: auto;
+      margin: 10px auto;
+  }
+
+  .des1 h5 {
+      font-size: 16px; /* Reduce heading size */
+  }
+
+  .des1 pre {
+      font-size: 12px; /* Reduce text size */
+  }
+
+  .des1.btn2 {
+      width: 80%; /* Make buttons full-width */
+      padding: 10px;
+  }
+}
+
+
+/* Review section */
+
+/* Review section container */
+.review-sec {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  background-color: #caecf2;
+  padding: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Inner container for image & description */
+.rev1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px; /* Space between image and text */
+}
+
+/* Image container */
+.rev-image {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 0px;
+  margin-right: 40px;
+  text-align: left;
+}
+
+.rev-image img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Review text container */
+.rev-dis {
+  flex: 2;
+  text-align: center;
+  max-width: 400px;
+  margin-left: 30px;
+}
+
+/* Button container */
+.btn-sec {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* Space above button */
+}
+
+/* Button styling */
+.btn3 {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn3:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+  .rev1 {
+      flex-direction: column; /* Stack image and text vertically */
+      gap: 20px; /* Reduce spacing */
+      text-align: center;
+  }
+
+  .rev-image {
+      max-width: 100%; /* Allow full-width on small screens */
+      margin: 0 auto; /* Center image */
+  }
+
+  .rev-image img {
+      width: 100%; /* Make images responsive */
+      max-width: 300px; /* Prevent oversized images */
+      height: auto;
+      border-radius: 10px;
+  }
+
+  .rev-dis {
+      max-width: 100%; /* Allow text to fit well */
+      font-size: 14px; /* Reduce text size */
+  }
+
+  .btn-sec {
+      width: 100%;
+      text-align: center;
+  }
+
+  .btn3 {
+      width: 30%; /* Make buttons full-width */
+      padding: 10px;
+  }
+}
+
+
+/* About section */
+
+/* About section container */
+.about-sec {
+  display: flex;
+   /* Push items to opposite sides */
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  max-width: 100%;
+  /* margin-top: 20px; */
+  justify-content: center;
+  gap: -200px;
+  
+}
+
+/* Description section */
+.about-dis .dis1 {
+ 
+  flex: 1;
+  max-width: 1000px;
+  text-align: center;
+  padding: 40px;
+  
+
+}
+
+.des1 h4{
+  text-align: center;
+  align-items: center;
+}
+
+/* Button section */
+.btn-sec1 {
+  flex: 2;
+  text-align: center;
+  max-width: 600px;
+  margin-left: 100px;
+  
+}
+
+/* Button styling */
+.btn4 {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 50px;
+  width: 300px;
+}
+
+.btn4:hover {
+  background-color: #0056b3;
+}
+
+@media(max-width:1024px){
+  .about-sec{
+    width: auto;
+    gap: -10px;
+  }
+
+  .about-dis .dis1{
+    width: 100px;
+  }
+
+  .btn-sec1{
+    width: 200px;
+  }
+
+  .btn4{
+    width: 160px;
+  }
+}
+
