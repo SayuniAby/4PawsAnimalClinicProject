@@ -1,0 +1,272 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: rgb(243, 238, 238);
+  
+  }
+   
+   /* Header */
+   header {
+    background: #f8f8f8;
+    padding: 1px 0;
+    /* border-bottom: 1px solid #a87777; */
+  }
+  .header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This ensures your nav and login remain on the right area */
+  }
+  
+   /* Container */
+   .container {
+    width: 90%;
+    max-width: 120000px;
+    margin: auto;
+  }
+  
+  .nav1 {
+    background-color: #38a1d1;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-aligns text inside the nav */
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally centers the nav links */
+  }
+  
+  .nav-links li a {
+    display: inline-block; /* Ensure links are inline elements */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .logo {
+    margin-right: auto;  /* Pushes the logo to the left */
+  } 
+  
+  
+  
+  .logo img {
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+  }
+  .nav-links li {
+    margin: 0 15px;
+  }
+  /* .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  } */
+  /* .nav-links li a:hover {
+    color: #4CAF50;
+  }  */
+  .login a {
+    text-decoration: none;
+    color: #d4dcd5;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 25px;
+  }
+  
+  .login a:hover{
+    color: black;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .close-icon{
+    display: none;
+  }
+
+@media (max-width: 1500px) {
+    header{
+        height: 75px;
+    }
+    .nav-links {
+        display: none; /* Hide menu links */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #38a1d1;
+        height: 100%;
+        width: 250px; /* Sidebar width */
+        padding-top: 60px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    }
+  
+    /* Show nav when active */
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .nav-links li {
+        text-align: center;
+        padding: 4px;
+    }
+  
+    /* Menu icon (☰) */
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    /* Close menu button */
+    .close-icon {
+        display: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+
+/* Footer section */
+.Footer-sec {
+    background-color: #d4e2f0;  
+  }
+  
+  /* Banner section */
+  .baner-sec1 {
+    /* margin-top: 20px; */
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #d4e2f0;
+    color: rgb(25, 24, 24);
+  }
+  
+  /* Footer heading */
+  .foot-hed h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer container */
+  .foot-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 50px;
+  }
+  
+  /* Individual footer columns */
+  .f-con1, .f-con2, .f-con3 {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent effect */
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+  }
+  
+  .f-con1 h5{
+    margin-top: 30px;
+  }
+  
+  .f-con2 h5{
+    margin-top: 30px;
+  }
+  
+  /* Footer links */
+  .foot-cont {
+    margin-bottom: 80px;
+    
+  }
+  
+  .foot-cont a {
+    
+    /* margin: 0 15px; */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 40px;
+  }
+  
+  .foot-cont a:hover {
+    color: #007BFF;
+  }
+  
+  
+  
+  /* Style for the banner image */
+  .top-banner {
+    width: 100%; 
+    height: 70px; 
+    display: block; 
+  }
+
+  @media (max-width:1100px) {
+    .foot-container {
+        flex-direction: column; 
+        align-items: center;
+        gap: 50px; /* Reduce spacing for better fit */
+        text-align: center;
+    }
+
+    .f-con1, .f-con2, .f-con3 {
+        padding: 20px;
+        height: 160px;
+        width: 100%; /* Allow full-width on small screens */
+        max-width: 400px; /* Prevent excessive stretching */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .foot-cont {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .foot-cont a {
+        display: block;
+        margin: 10px auto; /* Center align links */
+    }
+
+    .top-banner {
+        height: auto;
+        width: 100%;
+    }
+}
