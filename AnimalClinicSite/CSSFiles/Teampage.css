@@ -1,0 +1,357 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: rgb(243, 238, 238);
+
+  }
+  /* #c9ebf1 */
+  /* Intro section */
+
+  .Intro-sec {
+    margin-top: 75px;
+    /* border: 40px; */
+    display: flex;
+    flex-direction: column; /* Ensures Intro-dis is at the top and Intro-img is at the bottom */
+    align-items: center; /* Centers everything within the section */
+    background-color: hsl(188, 60%, 87%);
+    /* background-color: white; */
+  }
+  
+  .Intro-dis {
+    margin-top: 20px;
+    text-align: center; /* Centers h3 and p */
+    margin-bottom: 30px; /* Adds space between text and image */
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .Intro-dis h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .Intro-dis p{
+    font-style: italic;
+  }
+  .Intro-img {
+    display: flex;
+    justify-content: center; /* Centers the image */
+  }
+  
+  .image1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .baner1{
+    margin-top: 0px;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .Intro-sec {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+       
+    }
+
+    .Intro-dis {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Intro-dis h3 {
+        font-size: 22px; /* Reduce heading size */
+    }
+
+    .Intro-dis p {
+        font-size: 14px; /* Adjust text size */
+        line-height: 1.4;
+    }
+
+    .Intro-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1 {
+        width: 100%; /* Make images responsive */
+        max-width: 400px; /* Prevent oversized images */
+        height: auto;
+    }
+
+    .baner1 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+  /* Docter section */
+
+  .Doc-sec {
+    background-color: rgb(243, 238, 238);;
+    display: flex;
+    flex-direction: column; /* Ensures Doc-head is at the top */
+    align-items: center; 
+    width: 100%;
+    
+}
+
+.Doc-head h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; /* Centers the heading */
+}
+
+.Doc-contain {
+    
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    width: 80%;
+    gap: 70px;
+}
+
+.Doc1, .Doc2, .Doc3, .Doc4 {
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Ensures image is at the top, followed by description and button */
+    align-items: center;
+    width: 1000px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Doc-Img img {
+    width: 100%;
+    height: 150px;
+}
+
+.Doc-dis {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Doc-btn {
+    margin-top: 20px;
+}
+
+.Doc-btn button {
+    background-color: #a2bcd8;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Doc-btn button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1100px) {
+    .Doc-contain {
+        flex-direction: column; /* Stack doctors vertically */
+        align-items: center;
+        gap: 20px; /* Reduce spacing */
+    }
+
+    .Doc1, .Doc2, .Doc3, .Doc4 {
+        width: 100%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        padding: 15px;
+    }
+
+    .Doc-Img img {
+        width: 100%; /* Make images responsive */
+        max-width: 250px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .Doc-dis h5 {
+        font-size: 18px; /* Reduce heading size */
+    }
+
+    .Doc-dis pre, .Doc-dis p {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .Doc-btn button {
+        width: 100%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
+
+/* Service Section */
+
+.sev-sec {
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Ensures the heading is at the top */
+    /* align-items: center;  */
+    /* text-align: center; */
+    width: 100%;
+}
+
+.sev-hed h3 {
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sev-contain {
+    display: flex;
+    /* flex-direction: column;  */
+    /* align-items: center; */
+    gap: 200px;
+    width: 100%;
+    padding-left: 250px;
+    /* padding: 20px; */
+
+
+    /* margin-left: 100px; */
+    /* margin-right: 150px; */
+}
+
+.sev1, .sev2, .sev3 {
+    background-color: rgb(236, 239, 240);
+    display: flex;
+    flex-direction: column; /* Ensures image is at the top, followed by button */
+    align-items: center;
+    width: 200px;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+.sev-img img {
+    width: 100%;
+    height: auto;
+}
+
+.sev-btn1 button {
+    background-color: #a2bcd8;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.sev-btn1 button:hover {
+    background-color: #0056b3;
+}
+
+.sev-btn2 {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.sev-btn2 button {
+    background-color: #7d93ac;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    width: 200px;
+}
+
+.sev-btn2 button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 786px) {
+    .sev-contain {
+        flex-direction: column; 
+        align-items: center;
+        gap: 70px; /* Reduce spacing */
+        padding-left: 0; /* Remove left padding */
+        
+    }
+
+    .sev1, .sev2, .sev3 {
+        width: 100%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        /* padding: 15px; */
+    }
+
+    .sev-img img {
+        width: 100%; /* Make images responsive */
+        max-width: 350px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .sev-btn1 button {
+        width: 120px; /* Make buttons full-width */
+        padding: 12px;
+    }
+
+    .sev-btn2 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sev-contain {
+        /* flex-direction: column;  */
+        align-items: center;
+        gap: 70px; /* Reduce spacing */
+        padding-left: 0; /* Remove left padding */
+        
+    }
+
+    .sev1, .sev2, .sev3 {
+        width: 100%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        /* padding: 15px; */
+    }
+
+    .sev-img img {
+        width: 100%; /* Make images responsive */
+        max-width: 350px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .sev-btn1 button {
+        width: 120px; /* Make buttons full-width */
+        padding: 12px;
+    }
+
+    .sev-btn2 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
