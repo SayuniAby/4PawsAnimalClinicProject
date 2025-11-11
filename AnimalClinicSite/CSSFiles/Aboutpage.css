@@ -1,0 +1,368 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: hsl(188, 60%, 87%);
+
+  }
+  
+  /* About us section */
+
+  .Abou-sec{
+    margin-top: 70px;
+    padding: auto;
+    background-color: white;
+  }
+
+  .dis-sec1{
+    padding: 30px;
+    text-align: center;
+  }
+
+  .dis-sec1 h4{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .dis-sec1 p{
+    font-size: 16px;
+    color: #817e7e;
+    margin-bottom: 10px;
+  }
+
+  .dis-sec1 p b{
+    font-size: 16px;
+    color: #5e5d5d;
+    margin-bottom: 10px;
+  }
+
+  .image-sec1 {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center if needed */
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.image-sec1 .image1 {
+    margin-bottom: 20px;
+    width: 700px;
+    height: 300px;
+}
+
+.baner1{
+    margin-top: 0px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .Abou-sec {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .dis-sec1 h4 {
+        font-size: 24px; /* Reduce heading size */
+    }
+
+    .dis-sec1 p, .dis-sec1 p b{
+        font-size: 14px; /* Adjust text size */
+        line-height: 1.4;
+    }
+
+    .image-sec1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-sec1 .image1 {
+        width: 100%; /* Make images responsive */
+        max-width: 500px; /* Prevent oversized images */
+        height: 200px;
+    }
+
+    .baner1 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* our vision & mission section */
+
+.vis-sec {
+    display: flex; /* Enables horizontal layout */
+    justify-content: space-between; /* Distributes sections evenly */
+    align-items: flex-start; /* Aligns elements at the top */
+    padding: 40px;
+    background-color: hsl(188, 60%, 87%);
+}
+
+/* Left Section (Vision & Mission) */
+.vision-sec {
+    width: 48%; /* Adjust width */
+    border : 20px;
+}
+
+.vision-sec .vis-hed{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vision-sec .vis-dis h5{
+    margin-bottom: 10px;
+}
+
+.vision-sec .vis-dis pre{
+    margin-bottom: 80px;
+}
+.vision-sec .vis-dis{
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-bottom: 5px solid white;
+}
+
+.vision-sec .mis-dis{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+/* Right Section (Core Values) */
+.corevalu-sec {
+    width: 48%; /* Adjust width */
+    border: 20px;
+}
+
+/* Styling Headers */
+.vision-sec h4, .corevalu-sec h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling Subheaders */
+.vision-sec h5, .corevalu-sec h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val1 pre{
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val1 {
+    border-bottom: 5px solid white;
+}
+
+.corevalu-sec .val2{
+    border-bottom: 5px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val2 pre{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val3{
+    border-bottom: 5px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val3 pre{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val4{
+    border-bottom: 5px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val4 pre{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val5{
+    border-bottom: 5px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val5 pre{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val6{
+    /* border-bottom: 5px solid white; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corevalu-sec .val6 pre{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/* Styling Text Blocks */
+.vision-sec pre, .corevalu-sec pre {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Ensuring Mobile Responsiveness */
+@media (max-width: 1500px) {
+    .vis-sec {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .vision-sec, .corevalu-sec {
+        width: 100%; /* Full width on mobile */
+        text-align: center;
+    }
+
+    .vision-sec h4, .corevalu-sec h4 {
+        font-size: 24px; /* Reduce heading size */
+    }
+
+    .vision-sec h5, .corevalu-sec h5 {
+        font-size: 18px; /* Adjust subheading */
+    }
+
+    .vision-sec pre, .corevalu-sec pre {
+        font-size: 14px; /* Reduce text size */
+        line-height: 1.4;
+    }
+}
+
+
+
+/* Our Team section */
+
+.team-sec {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Header Styling */
+.tem-head h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Individual Team Member Cards */
+.Doc1, .Doc2, .Doc3 {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+/* Profile Image Styling */
+.doc-Img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Doctor Name */
+.doc-dis h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Doctor Title */
+.doc-dis pre {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Meet Our Team Button */
+.btn1 {
+    margin-top: 30px;
+}
+
+.btn1 button {
+     background-color: #7d93ac;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1 button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 900px) {
+    .team-container {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center;
+        gap: 20px; /* Reduce spacing */
+    }
+
+    .Doc1, .Doc2, .Doc3 {
+        width: 50%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        padding: 15px;
+        height: auto;
+    }
+
+    .doc-Img img {
+        width: 100%; /* Make images responsive */
+        max-width: 250px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .doc-dis h4 {
+        font-size: 18px; /* Reduce heading size */
+    }
+
+    .doc-dis pre {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .btn1 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
