@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Paws Animal Clinic</title>
+    <link rel="stylesheet" href="Menubar.css">
+    <link rel="stylesheet" href="Contactpage.css">
+</head>
+<body>
+    
+    <!-- Header -->
+  <header class="nav1">
+    <div class="container header-container">
+        <div class="logo">
+            <img src="../photo/logop.jpg" alt="For Paws Logo">
+        </div>
+        <span class="menu-icon">☰</span>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Aboutpage.html">About</a></li>
+                <li><a href="Teampage.html">Team</a></li>
+                <li><a href="Servicepage.html">Services</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="Feedbackpage.html">Reviews</a></li>
+                <li><a href="Contactpage.html">Contact</a></li>
+                <li><a href="#Login.html">Login</a></li>
+            </ul>
+            <span class="close-icon">✖</span>
+        </nav>
+    </div>
+</header>
+
+  <!-- Contact section -->
+
+  <div class="contact-sec">
+    <div class="con-head">
+        <h3>Contact Information</h3>
+    </div>
+
+    <div class="con-container">
+        <div class="con1">
+            <div class="con-dis">
+                <img class="Image-icon1" src="../photo/locationicon3.jpg" alt="">
+                <h6>4Paws Animal Hospital</h6>
+                <pre>526/A, Colombo Rd,
+Rathnapura</pre>
+            </div>
+            <div class="con-dis">
+                <img class="Image-icon1" src="../photo/phoneicon5.jpg" alt="">
+                <h6>Phone No</h6>
+                <pre>0760999899</pre>
+            </div>
+        </div>
+        <div class="con2">
+            <div class="con-dis">
+                <img class="Image-icon1" src="../photo/emailicon1.jpg" alt="">
+                <h6>Email</h6>
+                <pre>4pawslk@gmail.com</pre>
+            </div>
+            <div class="con-dis">
+                <img class="Image-icon1" src="../photo/timeicon2.jpg" alt="">
+                <h6>Open Hours</h6>
+                <pre>Monday – Saturday
+10.00 AM – 1.00 PM
+4.30 PM – 9.00 PM
+Sunday
+10.00 AM – 9.00 PM</pre>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- baner photo -->
+  <!-- <img class="top-banner" src="../photo/Topbanner1.PNG" alt="Image 6"> -->
+
+  
+
+</div>
+
+<!-- Map Section -->
+
+<div class="map-sec">
+    <h3>Find Us Here</h3>
+    <iframe 
+        title="Clinic Location Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.563591892915!2d80.38772587413328!3d6.7008444210788225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3bfb4389b8111%3A0x441aad614d721434!2s4%20Paws%20Animal%20Clinic%20%26%20Surgery!5e0!3m2!1sen!2slk!4v1746466586712!5m2!1sen!2slk" 
+        width="100%" height="550" style="border:0;" frameborder="0" >
+    </iframe>
+</div>
+
+<!-- Footer section -->
+
+<div class="Footer-sec">
+    <!-- baner photo -->
+     <img class="top-banner" src="../photo/Topbanner1.PNG" alt="Image 6">
+    <div class="baner-sec1">
+    <div class="foot-hed">
+      <h4>4Paws</h4>
+    </div>
+
+    <div class="foot-container">
+      <div class="f-con1">
+        <h5>Address</h5>
+        <pre>526/A, Colombo Rd,
+Rathnapura</pre>
+      </div>
+      <div class="f-con2">
+        <h5>Contact No</h5>
+        <pre>0760999899</pre>
+      </div>
+      <div class="f-con3">
+        <h5>Open Hours</h5>
+        <pre>Monday – Saturday
+10.00 AM – 1.00 PM
+4.30 PM – 9.00 PM
+Sunday
+10.00 AM – 9.00 PM</pre>
+      </div>
+    </div>
+
+    <div foot-cont>
+      <pre>
+      <a  href="#4pawslk@gmail.com">Email</a>        |       <a  href="#4pawslk@gmail.com">Facebook</a>        |         <a  href="#4pawslk@gmail.com">Instergram</a>
+      </pre>
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuIcon = document.querySelector(".menu-icon");
+        const closeIcon = document.querySelector(".close-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", function() {
+            navLinks.classList.add("active");
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        });
+
+        closeIcon.addEventListener("click", function() {
+            navLinks.classList.remove("active");
+            closeIcon.style.display = "none";
+            menuIcon.style.display = "block";
+        });
+
+        // **Handle screen resizing**
+        window.addEventListener("resize", function() {
+            if (window.innerWidth >  1500) { // If screen is bigger than mobile
+                navLinks.classList.remove("active"); // Close sidebar
+                menuIcon.style.display = "none"; // Hide menu icon
+                closeIcon.style.display = "none"; // Hide close icon
+            } else {
+                menuIcon.style.display = "block"; // Show menu icon for small screens
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
