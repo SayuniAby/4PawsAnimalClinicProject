@@ -1,0 +1,315 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(243, 238, 238);
+
+  }
+
+/* ----Service Intro Section -------*/
+.Service-sec {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    background-color: rgb(172, 211, 211);
+}
+
+.serv-dis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #acd3d3;
+}
+
+.sev_img {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sev_img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dis1 {
+    flex: 2;
+    padding-left: 20px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.dis1 h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dis1 p a{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.dis1 p{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.btn-sec {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: #6d93bd;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: #0056b3;
+}
+
+.baner1 {
+        width: 100%;
+        height: auto;
+}
+
+@media(max-width:1500px){
+    .sev_img img{
+        width: 280px;
+        height: 250px;
+    }
+}
+
+/* Container for the entire services section */
+    .sev-sec {
+      max-width: 1200px;
+      margin: auto; /* centers the container */
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+      gap: 50px;
+      text-align: center;
+    }
+    
+    /* The header spans across all grid columns */
+    .sev-head {
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+    }
+    
+    .sev-head h3 {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    
+    /* Style for each individual service box */
+    .sev-sec > div:not(.sev-head) {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Optional hover effect */
+    .sev-sec > div:not(.sev-head):hover {
+      transform: translateY(-5px);
+    }
+    
+    /* Image section and its style */
+    .img-sec {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 5px;
+      height: 70%;
+    }
+    
+    .img-sec img {
+      width: 100%;
+      height: auto;
+      display: block;
+      height: 100%;
+    }
+    
+    /* Button styling */
+    .btn-sec {
+      margin-top: 25px;
+    }
+    
+    .btn-sec .btn2 {
+      width: 200px;
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #81a2c4;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn-sec .btn2:hover {
+      background-color: #0056b3;
+    }
+    
+    /* Responsive Layout: Modify columns based on screen size */
+    @media (max-width: 1024px) {
+      .sev-sec {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .sev-sec {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .sev-sec {
+        grid-template-columns: 1fr;
+      }
+    }
+
+/* Our Team section */
+
+.team-sec {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Header Styling */
+.tem-head h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Individual Team Member Cards */
+.Doc1, .Doc2, .Doc3 {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+/* Profile Image Styling */
+.doc-Img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Doctor Name */
+.doc-dis h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Doctor Title */
+.doc-dis pre {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Meet Our Team Button */
+.btn3 {
+    margin-top: 30px;
+}
+
+.btn3 button {
+     background-color: #7d93ac;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn3 button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 900px) {
+    .team-container {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center;
+        gap: 20px; /* Reduce spacing */
+    }
+
+    .Doc1, .Doc2, .Doc3 {
+        width: 50%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        padding: 15px;
+        height: auto;
+    }
+
+    .doc-Img img {
+        width: 100%; /* Make images responsive */
+        max-width: 250px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .doc-dis h4 {
+        font-size: 18px; /* Reduce heading size */
+    }
+
+    .doc-dis pre {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .btn3 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
