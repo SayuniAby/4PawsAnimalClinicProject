@@ -1,0 +1,588 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: rgb(243, 238, 238);
+
+  }
+
+  /* Dog dis section */
+.intro-sec{
+    width: 100%;
+    height: auto;
+    background-color: #acd3d3;
+}
+
+.banner-sec{
+  margin-top: 75px;
+  /* padding-top: 150px;
+  padding-bottom: 90px;
+  position: relative;
+  background: url('../photo/banner.png') no-repeat center center;
+  background-size: cover; */
+  background-color: #acd3d3;
+  /* height:auto; */
+  width: 100%;
+}
+
+.baner1{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+.con-sec{
+    margin-top: 75px;
+    background-color: #acd3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 70px;
+}
+
+.img-sec{
+    height: 400px;
+    background-color: #acd3d3;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.dis-sec{
+    background-color: #acd3d3;
+    /* display: flex; */
+    margin-right: 20px;
+}
+
+.dis-sec h2{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.dis-sec p{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+
+    .intro-sec{
+    width: 100%;
+    height: auto;
+    background-color: #acd3d3;
+    }
+
+    .con-sec {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .img-sec {
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        
+    }
+
+    .img-sec img {
+        width: 100%;
+        /* max-width: 100%; */
+        height: 100%;
+    }
+
+    .dis-sec h2 {
+        font-size: 24px;
+    }
+
+    .dis-sec p {
+        font-size: 16px;
+    }
+
+    .baner1{
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .intro-sec{
+    width: 100%;
+    height: auto;
+    background-color: #acd3d3;
+    }
+
+    .baner1 {
+        width: 100%;
+        height: 50px;
+    }
+
+    .img-sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .img-sec img {
+        width: 100%;
+        /* max-width: 100%; */
+        height: 100%;
+    }
+
+    .dis-sec h2 {
+        font-size: 22px;
+    }
+
+    .dis-sec p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .intro-sec{
+    /* width: 100%; */
+    height: auto;
+    background-color: #acd3d3;
+    }
+
+    .con-sec {
+        gap: 20px;
+    }
+
+    .img-sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-sec img {
+        width: 100%;
+        /* max-width: 100%; */
+        height: auto;
+    }
+
+    .dis-sec h2 {
+        font-size: 20px;
+    }
+
+    .dis-sec p {
+        font-size: 13px;
+    }
+
+    .baner1 {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+/* How to care section */
+
+/* Main Section */
+.care-sec {
+    width: 100%;
+    padding: 40px;
+    background-color: #f2f0f1;
+}
+
+/* Content Container */
+.con-sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Title Styling */
+.dis-sec1 h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dis-p{
+    background-color: transparent;
+   
+}
+
+/* Paragraph Styling */
+.dis-sec1 p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* Ordered List Section */
+.order-sec {
+    background-color: transparent; /* Makes background see-through */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* List Items */
+.order-sec p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dis-sec1 h1 {
+        font-size: 28px;
+    }
+
+    .dis-sec1 p {
+        font-size: 16px;
+    }
+
+    .order-sec {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .dis-sec1 h1 {
+        font-size: 24px;
+    }
+
+    .dis-sec1 p {
+        font-size: 14px;
+    }
+
+    .order-sec p {
+        font-size: 14px;
+    }
+}
+
+.btn-sec1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-sec1 .btn1{
+    background-color: #6d93bd;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.btn-sec1 .btn1:hover{
+    background-color: #0056b3;
+}
+
+.baner2{
+    display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: hsl(188, 60%, 87%);
+    }
+
+
+/* Service Section */
+
+.sev-sec {
+    background-color: hsl(188, 60%, 87%);
+    display: flex;
+    flex-direction: column; /* Ensures the heading is at the top */
+    /* align-items: center;  */
+    /* text-align: center; */
+    width: 100%;
+}
+
+.sev-hed h3 {
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sev-contain {
+    display: flex;
+    /* flex-direction: column;  */
+    /* align-items: center; */
+    gap: 200px;
+    width: 100%;
+    padding-left: 250px;
+    /* padding: 20px; */
+
+
+    /* margin-left: 100px; */
+    /* margin-right: 150px; */
+}
+
+.sev1, .sev2, .sev3 {
+    background-color: rgb(224, 244, 247);
+    display: flex;
+    flex-direction: column; /* Ensures image is at the top, followed by button */
+    align-items: center;
+    width: 200px;
+    padding: 15px;
+    /* border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    
+}
+
+.sev-img img {
+    width: 100%;
+    height: auto;
+}
+
+.sev-btn1 button {
+    background-color: #a2bcd8;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.sev-btn1 button:hover {
+    background-color: #0056b3;
+}
+
+.sev-btn2 {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.sev-btn2 button {
+    background-color: #7d93ac;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    width: 200px;
+}
+
+.sev-btn2 button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 786px) {
+    .sev-contain {
+        flex-direction: column; 
+        align-items: center;
+        gap: 70px; /* Reduce spacing */
+        padding-left: 0; /* Remove left padding */
+        
+    }
+
+    .sev1, .sev2, .sev3 {
+        width: 100%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        /* padding: 15px; */
+    }
+
+    .sev-img img {
+        width: 100%; /* Make images responsive */
+        max-width: 350px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .sev-btn1 button {
+        width: 120px; /* Make buttons full-width */
+        padding: 12px;
+    }
+
+    .sev-btn2 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sev-contain {
+        /* flex-direction: column;  */
+        align-items: center;
+        gap: 70px; /* Reduce spacing */
+        padding-left: 0; /* Remove left padding */
+        
+    }
+
+    .sev1, .sev2, .sev3 {
+        width: 100%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        /* padding: 15px; */
+    }
+
+    .sev-img img {
+        width: 100%; /* Make images responsive */
+        max-width: 350px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .sev-btn1 button {
+        width: 120px; /* Make buttons full-width */
+        padding: 12px;
+    }
+
+    .sev-btn2 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
+/* Our Team section */
+
+.team-sec {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Header Styling */
+.tem-head h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Individual Team Member Cards */
+.Doc1, .Doc2, .Doc3 {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+/* Profile Image Styling */
+.doc-Img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Doctor Name */
+.doc-dis h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Doctor Title */
+.doc-dis pre {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Meet Our Team Button */
+.btn1 {
+    margin-top: 30px;
+}
+
+.btn1 button {
+     background-color: #7d93ac;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1 button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 900px) {
+    .team-container {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center;
+        gap: 20px; /* Reduce spacing */
+    }
+
+    .Doc1, .Doc2, .Doc3 {
+        width: 50%; /* Allow full-width on small screens */
+        max-width: 350px; /* Prevent excessive stretching */
+        padding: 15px;
+        height: auto;
+    }
+
+    .doc-Img img {
+        width: 100%; /* Make images responsive */
+        max-width: 250px; /* Prevent oversized images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .doc-dis h4 {
+        font-size: 18px; /* Reduce heading size */
+    }
+
+    .doc-dis pre {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .btn1 button {
+        width: 50%; /* Make buttons full-width */
+        padding: 12px;
+    }
+}
+
