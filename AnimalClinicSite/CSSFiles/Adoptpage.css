@@ -1,0 +1,271 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+   
+    background-color: white;
+
+  }
+
+/* Container for Adoption Intro Section */
+.Adopt_intro {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column; /* Ensures Intro-dis is at the top and Intro-img is at the bottom */
+  align-items: center; /* Centers everything within the section */
+  padding-top: 10px;
+  background-color: #caecf2; /* Optional background */
+}
+
+/* Left Side: Image Container */
+.Adopt_img {
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+/* Ensure the image is responsive */
+.Adopt_img img {
+  width: 70%;
+  height: 350px;
+  /* align-items: center; */
+  /* display: block; */
+  
+}
+
+/* Right Side: Text Container */
+.Adopt_D {
+  flex: 1;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Headline styling */
+.Adopt_D h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.Adopt_D p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design: Stack content vertically on smaller screens */
+@media (max-width: 768px) {
+  .Adopt_intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Adopt_D {
+    margin-top: 20px;
+  }
+
+  .Adopt_img img {
+  width: 70%;
+  height: 300px;
+  /* align-items: center; */
+  /* display: block; */
+  
+}
+}
+
+.baner1 {
+        width: 100%;
+        height: auto;
+}
+
+/* Container for the entire description section */
+.dis_sec {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;    
+}
+
+/* D_sec1: Contains sec1 (left) and sec2 (right) */
+.D_sec1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;  /* Space between D_sec1 and D_sec2 */
+  background-color: #fff;    
+}
+
+/* Each section takes up equal space */
+.sec1, 
+.sec2 {
+  flex: 1;
+  background-color: #fff;    
+}
+
+/* ----- Style for Before (sec1) & After (sec2) container ----- */
+.before, 
+.after {
+  background-color: rgb(219, 241, 247);         /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  /* text-align: center;              */
+  height: 400px;
+}
+
+/* Headings for before & after sections */
+.before h2,
+.after h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
+/* Paragraphs for before & after sections */
+.before p,
+.after p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ----- D_sec2: Full width section below D_sec1 ----- */
+.D_sec2 {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* sec3: Content inside D_sec2, centered with white background */
+.sec3 {
+  background-color: rgb(219, 241, 247);
+  padding: 20px;
+  max-width: 900px;  /* Adjust as desired */
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+/* Heading and paragraph style for sec3 */
+.sec3 h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
+.sec3 p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 1500px) {
+  /* Stack the left and right sections vertically on smaller screens */
+  .D_sec1 {
+    flex-direction: column;
+  }
+
+  .before, 
+  .after {
+    padding: 20px;
+    border-radius: 8px;
+    /* text-align: center;              */
+    height: 450px;
+  }
+}
+
+/* adopt pet section */
+/* Container styling: Display two columns side by side */
+.pet_sec{
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.pet_sec .container {
+  display: flex;
+  justify-content: space-between;  /* Space between .dis and .img_sec */
+  align-items: center;
+  /* flex-wrap: wrap;                    */
+  max-width: 1400px;                 /* Control overall width */
+  margin: 0 auto;                    /* Center container horizontally */
+  padding: 10px;
+  background-color: #caecf2;
+  margin-bottom: 20px;
+}
+
+/* Left Section: .dis */
+.dis {
+  flex: 1;
+  text-align: center; /* Center text and button */
+  padding: 20px;
+}
+
+/* Style the header & paragraphs inside .dis */
+.dis h5 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dis p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Style the button to be centered */
+.dis button {
+  display: block;
+  margin: 0 auto;  /* Center the button horizontally */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dis button:hover {
+  background-color: #0056b3;
+}
+
+/* Right Section: .img_sec */
+.img_sec {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Ensure the image is responsive */
+.img_sec img {
+  width: 100%;
+  max-width: 500px;  /* Limit the maximum width */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design: Stack columns on smaller screens */
+@media (max-width: 768px) {
+  .pet_sec .container {
+    flex-direction: column;  /* Stack .dis and .img_sec vertically */
+  }
+
+  .dis, .img_sec {
+    width: 100%;
+    padding: 10px;
+  }
+}
